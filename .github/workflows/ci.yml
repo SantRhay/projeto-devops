@@ -5,6 +5,7 @@ on:
     branches:
       - master
     pull_request:
+
 permissions:
   id-token: write
   contents: read
@@ -20,7 +21,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-            role-to-assume: arn:aws:iam::811936406688:role/GitHubActionsTerraformRole
+            role-to-assume: arn:aws:iam::81193640688:role/GitHubActionsTerraformRole
             aws-region: us-east-1
 
       - name: Setup Terraform
