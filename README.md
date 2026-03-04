@@ -31,15 +31,20 @@ Este projeto cria os seguintes recursos na AWS:
 
 # 🏗 Arquitetura
 
-Terraform utiliza backend remoto para armazenar o estado da infraestrutura.
+O Terraform provisiona infraestrutura na AWS utilizando backend remoto para armazenar o estado.
 
-EC2 Instance  
-↓  
-Terraform  
-↓  
-Remote State (S3)  
-↓  
-State Lock (DynamoDB)
+Arquitetura:
+
+Developer
+   ↓
+GitHub Repository
+   ↓
+Terraform
+   ↓
+AWS Infrastructure
+   ├── EC2 Instance
+   ├── S3 (Terraform State)
+   └── DynamoDB (State Lock)
 
 ---
 
