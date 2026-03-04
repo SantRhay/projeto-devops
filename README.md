@@ -75,7 +75,7 @@ Isso evita conflitos quando múltiplos usuários executam o Terraform.
 ### 1️⃣ Clonar repositório
 
 bash
-git clone https://github.com/SEU-USUARIO/projeto-devops.git
+git clone https://github.com/SantRhay/projeto-devops.git
 cd projeto-devops
 
 
