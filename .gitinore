@@ -1,8 +1,0 @@
-# Terraform
-.terraform/
-*.tfstate
-.tfstate.
-crash.log
-
-# Sistema
-.DS_Store
